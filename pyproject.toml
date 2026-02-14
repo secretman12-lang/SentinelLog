@@ -1,0 +1,19 @@
+[project]
+name = "sentinellog"
+version = "0.1.0"
+description = "Professional SSH Log Analyzer for detecting suspicious activity."
+authors = [
+    { name = "Isaias Souza" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "typer",
+    "rich"
+]
+
+[project.scripts]
+sentinellog = "sentinellog.cli:app"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

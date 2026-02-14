@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: sentinellog
+Version: 0.1.0
+Summary: Professional SSH Log Analyzer for detecting suspicious activity.
+Author: Isaias Souza
+Requires-Python: >=3.10
+Requires-Dist: typer
+Requires-Dist: rich

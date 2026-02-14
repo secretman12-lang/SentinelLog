@@ -1,0 +1,2 @@
+[console_scripts]
+sentinellog = sentinellog.cli:app
