@@ -3,9 +3,9 @@
 
 # 🛡️ SentinelLog
 
-> Professional SSH Log Analyzer for detecting suspicious authentication activity.
+> A modular SSH log analyzer for detecting suspicious authentication activity.
 
-SentinelLog is a modular and extensible CLI tool designed to analyze SSH authentication logs and identify suspicious login behavior based on failed password attempts.
+SentinelLog is a professional CLI tool designed to analyze SSH authentication logs and identify suspicious login behavior based on failed password attempts.
 
 It follows clean architecture principles, strong typing practices, and modern Python packaging standards.
 
@@ -17,7 +17,7 @@ It follows clean architecture principles, strong typing practices, and modern Py
 * 📊 Aggregates suspicious activity by IP address
 * 🎯 Risk classification (LOW / MEDIUM / HIGH)
 * 📈 System-wide risk scoring (0–100)
-* 🖥 Rich-based terminal interface
+* 🖥 Rich-powered terminal interface
 * 📤 JSON export support
 * 📥 STDIN support (pipeline compatible)
 * 🧩 Modular architecture (parser → analyzer → scorer → report)
@@ -30,24 +30,24 @@ It follows clean architecture principles, strong typing practices, and modern Py
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/SentinelLog.git
+git clone https://github.com/secretman12-lang/SentinelLog.git
 cd SentinelLog
 ```
 
-### Create virtual environment
+### Create a virtual environment
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-### Install locally (editable mode)
+### Install in editable mode
 
 ```bash
 pip install -e .
 ```
 
-You can now run:
+Now you can run:
 
 ```bash
 sentinellog --help
@@ -57,13 +57,13 @@ sentinellog --help
 
 ## 🧠 Usage
 
-### Analyze SSH log file
+### Analyze an SSH log file
 
 ```bash
 sentinellog --file /var/log/auth.log
 ```
 
-### Analyze custom log file
+### Analyze a custom log file
 
 ```bash
 sentinellog --file sentinellog/auth.log
@@ -105,16 +105,16 @@ sentinellog/
 ├── cli.py        # CLI entry point
 ├── parser.py     # Extracts SSH failure events
 ├── analyzer.py   # Groups events by IP
-├── scorer.py     # Risk modeling & scoring logic
-├── report.py     # Terminal rendering & JSON export
+├── scorer.py     # Risk classification and scoring logic
+├── report.py     # Terminal rendering and JSON export
 ```
 
-Design principles:
+### Design Principles
 
 * Separation of concerns
-* Typed interfaces
-* Extensible detection pipeline
+* Strong typing
 * Clear responsibility boundaries
+* Extensible detection pipeline
 
 ---
 
@@ -136,7 +136,7 @@ The overall system score is calculated based on aggregated suspicious activity a
 pytest
 ```
 
-(Tests can be extended for parser accuracy, risk classification, and score calculation.)
+Tests can be extended to cover parsing accuracy, risk classification logic, and scoring behavior.
 
 ---
 
@@ -158,8 +158,8 @@ pytest
 * [ ] Configurable thresholds
 * [ ] Real-time monitoring mode
 * [ ] Plugin-based detector architecture
-* [ ] Docker image
-* [ ] CI/CD integration
+* [ ] Docker support
+* [ ] CI integration
 
 ---
 
