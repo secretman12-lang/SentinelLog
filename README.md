@@ -3,6 +3,12 @@
 
 # 🛡️ SentinelLog
 
+![Python](https://img.shields.io/badge/python-3.10+-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active-success)
+![CLI](https://img.shields.io/badge/interface-CLI-lightgrey)
+![Tests](https://img.shields.io/badge/tests-pytest-informational)
+
 > A modular SSH log analyzer for detecting suspicious authentication activity.
 
 SentinelLog is a professional CLI tool designed to analyze SSH authentication logs and identify suspicious login behavior based on failed password attempts.
